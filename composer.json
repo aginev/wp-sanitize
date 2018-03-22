@@ -1,0 +1,29 @@
+{
+  "name": "aginev/wp-sanitize",
+  "description": "WordPress transliterate post slugs and media file names",
+  "keywords": [
+    "aginev",
+    "transliterate-wordpress-slugs-and-media-file-names"
+  ],
+  "homepage": "https://aginev.com",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Atanas Ginev",
+      "email": "atanas.ginev@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "WpSanitize\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^7.0",
+    "danielstjules/Stringy": "^3.1"
+  }
+}
