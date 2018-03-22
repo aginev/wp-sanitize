@@ -15,10 +15,12 @@ composer require aginev/wp-sanitize
 
 ```php
 wp_sanitize_title();
+// Имало едно време в Мексико -> imalo-edno-vreme-v-meksiko
 ```
 
 ### Transliterate media library file names
 
 ```php
 wp_sanitize_filenames();
+// Имало едно време в Мексико.jpg -> imalo-edno-vreme-v-meksiko.jpg
 ```
