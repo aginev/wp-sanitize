@@ -24,3 +24,8 @@ wp_sanitize_title();
 wp_sanitize_filenames();
 // Имало едно време в Мексико.jpg -> imalo-edno-vreme-v-meksiko.jpg
 ```
+
+## License
+Everything in this repository is MIT License unless otherwise specified.
+
+MIT © 2018 Atanas Ginev
