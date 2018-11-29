@@ -18,15 +18,15 @@ class WpSanitize
      */
     public static function title()
     {
-        remove_filter('sanitize_title', 'sanitize_title_with_dashes', 11);
+        add_filter('get_sample_permalink', function ($permalink, $post_id, $title, $name, $post) {
+            $slug = $permalink[1] ?? '';
 
-        add_filter('sanitize_title', function ($title, $rawTitle, $context) {
-            if ($context == 'save') {
-                return Stringy::create($rawTitle)->slugify()->__toString();
-            } else {
-                return $title;
+            if ($slug) {
+                $permalink[1] = Stringy::create($permalink[1])->slugify()->__toString();
             }
-        }, 10, 3);
+
+            return $permalink;
+        }, 10, 5);
     }
 
     /**
